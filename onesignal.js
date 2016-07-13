@@ -78,7 +78,7 @@ OneSignal.prototype.get = function (path, callback) {
 /**
  * This method makes a post request
  * @memberof OneSignal
- * @method get
+ * @method post
  */
 OneSignal.prototype.post = function (path, data, callback) {
     this.__request({
@@ -96,7 +96,7 @@ OneSignal.prototype.post = function (path, data, callback) {
 /**
  * This method makes a put request
  * @memberof OneSignal
- * @method get
+ * @method put
  */
 OneSignal.prototype.put = function (path, data, callback) {
     this.__request({
@@ -121,7 +121,7 @@ OneSignal.prototype.delete = function (path, callback) {
         host: this.options.host,
         port: this.options.port,
         path: format('/api/%s/%s', this.options.version, path),
-        method: 'get',
+        method: 'delete',
         headers: {
             'Content-Type': 'application/json',
             'Authorization': format('Basic %s', this.options.api_key)

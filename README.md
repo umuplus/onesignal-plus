@@ -31,7 +31,8 @@ Once your client instance is ready, there are 4 methods you can call:
 Path is for defining API method such as *players*, *players/1234567890*, *apps*, *apps/1234567890*, *notifications* and callback is for handling results.
 
 *POST* and *PUT* methods takes 3 parameters such as **path**, **data** and **callback**.
-Path is for defining API method such as players, apps, notifications and callback is for handling results. Data parameter is for sending data to the server.
+Path is for defining API method such as players/1234567890, apps/1234567890, notifications/1234567890 and callback is for handling results.
+Data parameter is for sending data to the server.
 
     var $onesignal = require('onesignal-plus').$instance;
 
