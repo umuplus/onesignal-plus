@@ -1,5 +1,5 @@
 {
-  "version": "0.0.1",
+  "version": "0.5.3",
   "name": "onesignal-plus",
   "description": "extensible one signal client library for node.js",
   "author": {
