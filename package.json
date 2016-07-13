@@ -1,0 +1,27 @@
+{
+  "version": "0.0.1",
+  "name": "onesignal-plus",
+  "description": "extensible one signal client library for node.js",
+  "author": {
+    "name": "Umut Aydin"
+  },
+  "keywords": [
+    "onesignal",
+    "push",
+    "notifications",
+    "android",
+    "ios"
+  ],
+  "bugs": {
+    "url": "https://github.com/umuplus/onesignal-plus/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/umuplus/onesignal-plus.git"
+  },
+  "homepage": "https://github.com/umuplus/onesignal-plus",
+  "main": "./onesignal.js",
+  "dependencies": {
+  },
+  "readmeFilename": "README.md"
+}
