@@ -4,6 +4,10 @@ one signal client library for node.js
 **onesignal-plus** is an extensible node.js client library for one signal service.
 It's as simple as possible to support large amount of methods in official API documentation at https://documentation.onesignal.com/docs/server-api-overview
 
+#### Install
+
+> npm install onesignal-plus
+
 #### Settings
 
 > **host:** 'onesignal.com'
@@ -29,7 +33,7 @@ Path is for defining API method such as *players*, *players/1234567890*, *apps*,
 *POST* and *PUT* methods takes 3 parameters such as **path**, **data** and **callback**.
 Path is for defining API method such as players, apps, notifications and callback is for handling results. Data parameter is for sending data to the server.
 
-    var $onesignal = require('./onesignal').$instance;
+    var $onesignal = require('onesignal-plus').$instance;
 
     $onesignal.setup({api_key: 'API_KEY'});
 
