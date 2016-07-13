@@ -42,9 +42,8 @@ Data parameter is for sending data to the server.
         app_id: 'APP_ID',
         contents: {en: 'Hi!'},
         include_player_ids: ['PLAYER_ID']
-    }, function (error, data) {
-        console.log(error, data);
+    }, function (errors, data) {
+        console.log(errors, data);
     });
 
 *Please check official documentation to learn how to use API methods*
-

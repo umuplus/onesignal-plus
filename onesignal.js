@@ -37,23 +37,28 @@ OneSignal.prototype.__request = function (options, data, callback) {
     var req = https.request(options, function (res) {
         res.on('data', function (data) {
             try {
-                callback(null, JSON.parse(data));
+                var response = JSON.parse(data);
+                if (response.hasOwnProperty('errors') && response.errors instanceof Array && response.errors.length) {
+                    callback(response.errors);
+                } else {
+                    callback(null, response);
+                }
             } catch (e) {
-                callback(e);
+                callback([e]);
             }
         });
     });
 
     try {
         req.on('error', function (e) {
-            callback(e);
+            callback([e]);
         });
         if (data) {
             req.write(JSON.stringify(data));
         }
         req.end();
     } catch (e) {
-        callback(e);
+        callback([e]);
     }
 };
 
